@@ -8,6 +8,13 @@ import { ArrowLeft, CheckCircle, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 import Logo from '@/components/logo';
 
+// This below function (generateStaticParams) tells Next.js to generate all the static pages for the available case study slugs.
+export async function generateStaticParams() {
+  return Object.keys(caseStudies).map((slug) => ({
+    slug,
+  }));
+}
+
 export default function CaseStudyPage() {
   const params = useParams();
   const slug = params?.slug as string;
