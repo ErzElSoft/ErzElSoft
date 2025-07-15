@@ -155,7 +155,7 @@ const ShowcaseSection: React.FC = () => {
                 </CardDescription>
                 <Button
                   onClick={() =>
-                    window.open(`/case-studies/${item.slug}`, '_blank')
+                    window.open(`./case-studies/${item.slug}`, '_blank')
                   }
                   className='bg-orange-500 hover:bg-orange-600 text-white py-2 text-base'
                 >

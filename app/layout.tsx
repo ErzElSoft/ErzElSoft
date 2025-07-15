@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   description:
     'Transform your business with cutting-edge technology solutions from ErzEl Soft',
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: './favicon.png',
+    shortcut: './favicon.png',
+    apple: './favicon.png',
   },
 };
 
