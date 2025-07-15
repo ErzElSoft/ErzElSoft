@@ -1,57 +1,41 @@
-import { useRouter } from 'next/navigation';
-import { useParams } from 'next/navigation';
+// app/case-studies/[slug]/page.tsx
+import { notFound } from 'next/navigation';
 import { caseStudies } from '@/data/caseStudies';
-import { Button } from '@/components/ui/button';
 import { ArrowLeft, CheckCircle, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 import Logo from '@/components/logo';
+import Link from 'next/link';
 
-// This below function (generateStaticParams) tells Next.js to generate all the static pages for the available case study slugs.
+type TechnologyItem = string | { name: string; image: string };
+
+// ✅ Required for static export with dynamic routes
 export async function generateStaticParams() {
-  return Object.keys(caseStudies).map((slug) => ({
-    slug,
-  }));
+  return Object.keys(caseStudies).map((slug) => ({ slug }));
 }
 
-export default function CaseStudyPage() {
-  const params = useParams();
-  const slug = params?.slug as string;
-  const router = useRouter();
+interface Props {
+  params: { slug: string };
+}
 
+export default function CaseStudyPage({ params }: Props) {
+  const slug = params.slug;
   const caseStudy = caseStudies[slug];
 
-  if (!caseStudy) {
-    return (
-      <div className='min-h-screen flex items-center justify-center bg-gray-50'>
-        <div className='text-center'>
-          <h1 className='text-2xl font-bold text-gray-900 mb-4'>
-            Case Study Not Found
-          </h1>
-          <Button
-            onClick={() => router.push('/#showcase')}
-            className='bg-orange-500 hover:bg-orange-600'
-          >
-            <ArrowLeft className='w-4 h-4 mr-2' />
-            Back to Showcase
-          </Button>
-        </div>
-      </div>
-    );
-  }
+  if (!caseStudy) return notFound();
 
   return (
     <div className='min-h-screen bg-white'>
       <header className='bg-white border-b border-gray-200 sticky top-0 z-50'>
         <div className='w-full px-4 lg:px-6 py-4'>
           <div className='flex items-center justify-between max-w-[1440px] mx-auto'>
-            <Button
-              variant='ghost'
-              onClick={() => router.push('/#showcase')}
-              className='text-orange-500 hover:text-orange-600'
+            <Link
+              href='/#showcase'
+              className='text-orange-500 hover:text-orange-600 flex items-center font-medium'
             >
               <ArrowLeft className='w-4 h-4 mr-2' />
               Back to Showcase
-            </Button>
+            </Link>
             <div className='flex items-center space-x-2'>
               <Logo size='lg' />
               <span className='font-semibold text-gray-900'>Case Study</span>
@@ -73,6 +57,7 @@ export default function CaseStudyPage() {
 
       <section className='py-16'>
         <div className='w-full px-4 lg:px-6 max-w-[1440px] mx-auto'>
+          {/* Images */}
           <div className='grid md:grid-cols-2 gap-8 mb-12'>
             {caseStudy.images.map((img, i) => (
               <div
@@ -91,23 +76,19 @@ export default function CaseStudyPage() {
                   width={caseStudy.images.length === 1 ? 1024 : 600}
                   height={caseStudy.images.length === 1 ? 768 : 400}
                   className='w-full h-auto object-cover'
-                  sizes={
-                    caseStudy.images.length === 1
-                      ? '(max-width: 1024px) 100vw, 1024px'
-                      : '(max-width: 600px) 100vw, 600px'
-                  }
                 />
               </div>
             ))}
           </div>
 
+          {/* Challenges and Solutions */}
           <div className='grid md:grid-cols-2 gap-10 mb-12'>
             <div>
               <h2 className='text-2xl font-semibold text-gray-900 mb-2'>
                 <TrendingUp className='inline w-5 h-5 text-orange-500 mr-2' />
                 The Challenge
               </h2>
-              <ul className='list-disc list-outside text-gray-600 space-y-1'>
+              <ul className='list-disc list-outside text-gray-600 space-y-1 pl-5'>
                 {caseStudy.challenge.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
@@ -118,7 +99,7 @@ export default function CaseStudyPage() {
                 <CheckCircle className='inline w-5 h-5 text-orange-500 mr-2' />
                 Our Solution
               </h2>
-              <ul className='list-disc list-outside text-gray-600 space-y-1'>
+              <ul className='list-disc list-outside text-gray-600 space-y-1 pl-5'>
                 {caseStudy.solution.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
@@ -126,6 +107,7 @@ export default function CaseStudyPage() {
             </div>
           </div>
 
+          {/* Key Metrics */}
           <div className='mb-12'>
             <h2 className='text-3xl font-bold mb-6 text-center'>Key Metrics</h2>
             <div className='grid md:grid-cols-3 gap-6 text-center'>
@@ -145,27 +127,46 @@ export default function CaseStudyPage() {
             </div>
           </div>
 
+          {/* Technologies */}
           <div className='mb-12'>
             <h2 className='text-3xl font-bold mb-6'>Technologies Used</h2>
             <div className='flex flex-wrap gap-3'>
-              {caseStudy.technologies.map((tech, i) => (
-                <span
-                  key={i}
-                  className='px-4 py-2 bg-orange-100 text-orange-700 rounded-full font-medium'
-                >
-                  {tech}
-                </span>
-              ))}
+              {(caseStudy.technologies as TechnologyItem[]).map((tech, i) =>
+                typeof tech === 'string' ? (
+                  <span
+                    key={i}
+                    className='px-4 py-2 bg-orange-100 text-orange-700 rounded-full font-medium'
+                  >
+                    {tech}
+                  </span>
+                ) : (
+                  <div
+                    key={i}
+                    className='flex items-center space-x-2 bg-orange-100 px-4 py-2 rounded-full'
+                  >
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      width={20}
+                      height={20}
+                      className='inline-block'
+                    />
+                    <span className='text-orange-700 font-medium'>
+                      {tech.name}
+                    </span>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
+          {/* CTA Button */}
           <div className='text-center'>
-            <Button
-              onClick={() => router.push('/#contact')}
-              className='bg-orange-500 hover:bg-orange-600 text-white text-lg px-6 py-3 rounded-lg'
-            >
-              Let’s Work Together
-            </Button>
+            <Link href='/#contact'>
+              <Button className='bg-orange-500 hover:bg-orange-600 text-white text-lg px-6 py-3 rounded-lg'>
+                Let’s Work Together
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
