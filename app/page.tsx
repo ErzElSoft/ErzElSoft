@@ -42,6 +42,7 @@ export default function ErzEl() {
   const [isHovering, setIsHovering] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const [cellWidth, setCellWidth] = useState('60%');
   useEffect(() => {
