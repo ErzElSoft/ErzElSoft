@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/ErzElSoft',
+  assetPrefix: '/ErzElSoft',
   output: 'export',
   eslint: {
     ignoreDuringBuilds: true,

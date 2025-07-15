@@ -17,11 +17,12 @@ export default function Logo({
     lg: 'w-36 h-16',
     xl: 'w-44 h-20',
   };
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const logoSrc =
     variant === 'black'
-      ? './images/erzelsoft-black-logo.png'
-      : '/images/erzelsoft-logo.png';
+      ? `${basePath}/images/erzelsoft-black-logo.png`
+      : `${basePath}/images/erzelsoft-logo.png`;
 
   const altText =
     variant === 'black' ? 'ErzEl Soft Black Logo' : 'ErzEl Soft Logo';
