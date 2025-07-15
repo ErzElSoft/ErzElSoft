@@ -13,63 +13,63 @@ interface TechItem {
 const techStack: TechItem[] = [
   {
     name: 'MERN',
-    logoSrc: '/images/mern.png',
+    logoSrc: './images/mern.png',
     description: 'MongoDB, Express, React, Node.js',
     experience: '5+ years',
   },
   {
     name: 'Angular',
-    logoSrc: '/images/angular.png',
+    logoSrc: './images/angular.png',
     experience: '3+ years',
   },
   {
     name: 'React Native',
-    logoSrc: '/images/react-native.png',
+    logoSrc: './images/react-native.png',
     experience: '4+ years',
   },
   {
     name: 'PHP',
-    logoSrc: '/images/php.png',
+    logoSrc: './images/php.png',
     experience: '6+ years',
   },
   {
     name: 'Asp.net core',
-    logoSrc: '/images/aspnet-core.png',
+    logoSrc: './images/aspnet-core.png',
     experience: '4+ years',
   },
   {
     name: 'C#',
-    logoSrc: '/images/csharp.png',
+    logoSrc: './images/csharp.png',
     experience: '5+ years',
   },
   {
     name: 'Vue.js',
-    logoSrc: '/images/vuejs.png',
+    logoSrc: './images/vuejs.png',
     experience: '2+ years',
   },
   {
     name: 'AI',
-    logoSrc: '/images/ai.png',
+    logoSrc: './images/ai.png',
     experience: '1+ years',
   },
   {
     name: 'MS SQL',
-    logoSrc: '/images/sql.png',
+    logoSrc: './images/sql.png',
     experience: '6+ years',
   },
   {
     name: 'MongoDB',
-    logoSrc: '/images/mongodb.png',
+    logoSrc: './images/mongodb.png',
     experience: '5+ years',
   },
   {
     name: 'WordPress',
-    logoSrc: '/images/wordpress.png',
+    logoSrc: './images/wordpress.png',
     experience: '6+ years',
   },
   {
     name: 'Shopify',
-    logoSrc: '/images/shopify.png',
+    logoSrc: './images/shopify.png',
     experience: '2+ years',
   },
 ];

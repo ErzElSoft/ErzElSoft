@@ -27,7 +27,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'Floral',
     slug: 'floral',
-    images: ['/images/floral.jpg'],
+    images: ['./images/floral.jpg'],
     shortDescription: 'Blooms Crafted Digitally with Love & Elegance.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -42,7 +42,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'Admin Panel',
     slug: 'adminPanel',
-    images: ['/images/admin-panel.jpg'],
+    images: ['./images/admin-panel.jpg'],
     shortDescription: 'A comprehensive online shopping solution.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -57,7 +57,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'Restaurant',
     slug: 'restuarant',
-    images: ['/images/restaurant.jpg'],
+    images: ['./images/restaurant.jpg'],
     shortDescription: 'A comprehensive online shopping solution.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -72,7 +72,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'T-Shirts Designs',
     slug: 'T-ShirtsDesigns',
-    images: ['/images/t-shirts.jpg'],
+    images: ['./images/t-shirts.jpg'],
     shortDescription: 'A comprehensive online shopping solution.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -87,7 +87,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'EyeWear',
     slug: 'EyeWear',
-    images: ['/images/1.jpg'],
+    images: ['./images/1.jpg'],
     shortDescription: 'A comprehensive online shopping solution.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -102,7 +102,7 @@ const showcaseData: ShowcaseItem[] = [
   {
     title: 'Healthcare Management System',
     slug: 'healthcare-management',
-    images: ['/images/2.jpg'],
+    images: ['./images/2.jpg'],
     shortDescription: 'Digitized healthcare operations and records.',
     detailedDescription:
       'Developed telemedicine, scheduling, and patient data management features.',

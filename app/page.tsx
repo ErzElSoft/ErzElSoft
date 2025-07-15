@@ -481,7 +481,7 @@ export default function ErzEl() {
                 style={{ width: cellWidth }}
               >
                 <img
-                  src={`/images/${img}`}
+                  src={`./images/${img}`}
                   alt={`Slide ${idx + 1}`}
                   className='rounded-xl shadow-xl border border-gray-200 max-w-full h-auto'
                 />
@@ -621,7 +621,7 @@ export default function ErzEl() {
                     {descriptions[selectedTab]}
                   </p>
                   <img
-                    src={`/images/${ServicesImages[selectedTab]}`}
+                    src={`./images/${ServicesImages[selectedTab]}`}
                     alt={`Tab ${selectedTab + 1}`}
                     className='rounded-xl shadow-lg border border-gray-200 w-full h-auto'
                   />
