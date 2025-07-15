@@ -1,5 +1,3 @@
-'use client';
-
 import { useRouter } from 'next/navigation';
 import { useParams } from 'next/navigation';
 import { caseStudies } from '@/data/caseStudies';
