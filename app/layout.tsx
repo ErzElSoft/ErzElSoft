@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: 'ErzEl Soft - Building custom Web Design, Mobile App, Web Development',
   description:
     'Transform your business with cutting-edge technology solutions from ErzEl Soft',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
