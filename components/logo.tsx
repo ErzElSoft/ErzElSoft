@@ -21,7 +21,7 @@ export default function Logo({
   const logoSrc =
     variant === 'black'
       ? './images/erzelsoft-black-logo.png'
-      : './images/erzelsoft-logo.png';
+      : '/images/erzelsoft-logo.png';
 
   const altText =
     variant === 'black' ? 'ErzEl Soft Black Logo' : 'ErzEl Soft Logo';
