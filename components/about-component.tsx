@@ -85,7 +85,7 @@ const AboutSection: React.FC = () => {
           <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
             About <span className='text-orange-500'>ErzEl Soft</span>
           </h2>
-          <p className='text-xl text-gray-600 w-full'>
+          <p className='text-left text-xl text-gray-600 w-full'>
             At{' '}
             <span className='underline decoration-orange-500 underline-offset-4'>
               <strong>ERZEL Soft</strong>
