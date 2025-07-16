@@ -652,7 +652,7 @@ export default function ErzEl() {
           </div>
           {/* Right Side - Steps */}
           <div className='relative'>
-            <div className='relative pl-12'>
+            <div className='relative pl-0 md:pl-12'>
               {/* Centered Vertical Line */}
               <span className='hidden md:block absolute left-5 top-0 bottom-0 w-[2px] bg-orange-300'></span>
 
@@ -662,7 +662,7 @@ export default function ErzEl() {
                   className='mb-16 relative transition-all duration-700 transform'
                 >
                   {/* Step Card with icon + title in flex row */}
-                  <div className='bg-white p-6 rounded-xl shadow-md ml-10 flex items-center gap-4'>
+                  <div className='bg-white p-6 rounded-xl shadow-md md:ml-10 flex flex-col md:flex-row items-start md:items-center gap-4'>
                     {/* Icon */}
                     <i
                       className={`${iconClass} text-orange-500 text-2xl flex-shrink-0`}
