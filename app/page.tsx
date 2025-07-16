@@ -654,7 +654,7 @@ export default function ErzEl() {
           <div className='relative'>
             <div className='relative pl-12'>
               {/* Centered Vertical Line */}
-              <span className='absolute left-5 top-0 bottom-0 w-[2px] bg-orange-300'></span>
+              <span className='hidden md:block absolute left-5 top-0 bottom-0 w-[2px] bg-orange-300'></span>
 
               {steps.map(({ iconClass, title, description }, i) => (
                 <div
