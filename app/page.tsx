@@ -77,7 +77,7 @@ export default function ErzEl() {
     'admin-panel.jpg',
     'floral.jpg',
     't-shirts.jpg',
-    'zaika.jpg',
+    'Zaika.jpg',
   ];
 
   const ServicesImages = [
@@ -85,7 +85,7 @@ export default function ErzEl() {
     'mobile.jpg',
     'floral.jpg',
     't-shirts.jpg',
-    'zaika.jpg',
+    'Zaika.jpg',
   ];
 
   const scrollToSection = (id: string) => {
