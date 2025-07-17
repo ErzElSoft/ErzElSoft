@@ -10,66 +10,67 @@ interface TechItem {
   experience?: string;
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const techStack: TechItem[] = [
   {
     name: 'MERN',
-    logoSrc: './images/mern.png',
+    logoSrc: `${basePath}/images/mern.png`,
     description: 'MongoDB, Express, React, Node.js',
     experience: '5+ years',
   },
   {
     name: 'Angular',
-    logoSrc: './images/angular.png',
+    logoSrc: `${basePath}/images/angular.png`,
     experience: '3+ years',
   },
   {
     name: 'React Native',
-    logoSrc: './images/react-native.png',
+    logoSrc: `${basePath}/images/react-native.png`,
     experience: '4+ years',
   },
   {
     name: 'PHP',
-    logoSrc: './images/php.png',
+    logoSrc: `${basePath}/images/php.png`,
     experience: '6+ years',
   },
   {
     name: 'Asp.net core',
-    logoSrc: './images/aspnet-core.png',
+    logoSrc: `${basePath}/images/aspnet-core.png`,
     experience: '4+ years',
   },
   {
     name: 'C#',
-    logoSrc: './images/csharp.png',
+    logoSrc: `${basePath}/images/csharp.png`,
     experience: '5+ years',
   },
   {
     name: 'Vue.js',
-    logoSrc: './images/vuejs.png',
+    logoSrc: `${basePath}/images/vuejs.png`,
     experience: '2+ years',
   },
   {
     name: 'AI',
-    logoSrc: './images/ai.png',
+    logoSrc: `${basePath}/images/ai.png`,
     experience: '1+ years',
   },
   {
     name: 'MS SQL',
-    logoSrc: './images/sql.png',
+    logoSrc: `${basePath}/images/sql.png`,
     experience: '6+ years',
   },
   {
     name: 'MongoDB',
-    logoSrc: './images/mongodb.png',
+    logoSrc: `${basePath}/images/mongodb.png`,
     experience: '5+ years',
   },
   {
     name: 'WordPress',
-    logoSrc: './images/wordpress.png',
+    logoSrc: `${basePath}/images/wordpress.png`,
     experience: '6+ years',
   },
   {
     name: 'Shopify',
-    logoSrc: './images/shopify.png',
+    logoSrc: `${basePath}/images/shopify.png`,
     experience: '2+ years',
   },
 ];

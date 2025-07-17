@@ -33,7 +33,7 @@ import Flickity from 'react-flickity-component';
 import 'flickity/css/flickity.css';
 import AboutSection from '@/components/about-component';
 import ShowcaseSection from '@/components/showcase.component';
-
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export default function ErzEl() {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,6 +77,7 @@ export default function ErzEl() {
     'admin-panel.jpg',
     'floral.jpg',
     't-shirts.jpg',
+    'zaika.jpg',
   ];
 
   const ServicesImages = [
@@ -84,6 +85,7 @@ export default function ErzEl() {
     'mobile.jpg',
     'floral.jpg',
     't-shirts.jpg',
+    'zaika.jpg',
   ];
 
   const scrollToSection = (id: string) => {
@@ -482,7 +484,7 @@ export default function ErzEl() {
                 style={{ width: cellWidth }}
               >
                 <img
-                  src={`./images/${img}`}
+                  src={`${basePath}/images/${img}`}
                   alt={`Slide ${idx + 1}`}
                   className='rounded-xl shadow-xl border border-gray-200 max-w-full h-auto'
                 />
@@ -622,7 +624,7 @@ export default function ErzEl() {
                     {descriptions[selectedTab]}
                   </p>
                   <img
-                    src={`./images/${ServicesImages[selectedTab]}`}
+                    src={`${basePath}/images/${ServicesImages[selectedTab]}`}
                     alt={`Tab ${selectedTab + 1}`}
                     className='rounded-xl shadow-lg border border-gray-200 w-full h-auto'
                   />
