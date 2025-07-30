@@ -65,56 +65,56 @@ export const caseStudies: Record<string, CaseStudyData> = {
 
   },
 
-  'healthcare-management': {
-    title: 'Healthcare Management System',
-    client: 'MedCare Hospital Network',
-    industry: 'Healthcare',
-    duration: '12 months',
-    teamSize: '15 developers',
-    description:
-      'Digital transformation of healthcare operations with patient management, telemedicine features, and integrated billing systems.',
-   challenge: [
-      'Managing complex product variants like bouquet sizes and seasonal availability.',
-      'Enhancing checkout security to reduce abandoned carts.',
-      'Optimizing cart performance for mobile and desktop users.',
-    ],
-    solution: [
-      'Optimized database schema to support dynamic product variants and pricing.',
-      'Implemented image lazy loading and mobile-first UI design with React.',
-      'Integrated secure and fast checkout using Stripe with support for scheduling delivery.',
-    ],
-    results: [
-      '80% reduction in appointment scheduling time',
-      '95% patient satisfaction rate',
-      '60% increase in telemedicine consultations',
-    ],
-    technologies: [
-      'React',
-      'Python',
-      'PostgreSQL',
-      'WebRTC',
-      'AWS HIPAA',
-      'Docker',
-    ],
-    images: [`${basePath}'/images/2.jpg`],
-    metrics: [
-      {
-        label: 'Time Saved',
-        value: '80%',
-        description: 'In appointment scheduling',
-      },
-      {
-        label: 'Satisfaction',
-        value: '95%',
-        description: 'Patient satisfaction rate',
-      },
-      {
-        label: 'Cost Reduction',
-        value: '50%',
-        description: 'Administrative savings',
-      },
-    ],
-  },
+  // 'healthcare-management': {
+  //   title: 'Healthcare Management System',
+  //   client: 'MedCare Hospital Network',
+  //   industry: 'Healthcare',
+  //   duration: '12 months',
+  //   teamSize: '15 developers',
+  //   description:
+  //     'Digital transformation of healthcare operations with patient management, telemedicine features, and integrated billing systems.',
+  //  challenge: [
+  //     'Managing complex product variants like bouquet sizes and seasonal availability.',
+  //     'Enhancing checkout security to reduce abandoned carts.',
+  //     'Optimizing cart performance for mobile and desktop users.',
+  //   ],
+  //   solution: [
+  //     'Optimized database schema to support dynamic product variants and pricing.',
+  //     'Implemented image lazy loading and mobile-first UI design with React.',
+  //     'Integrated secure and fast checkout using Stripe with support for scheduling delivery.',
+  //   ],
+  //   results: [
+  //     '80% reduction in appointment scheduling time',
+  //     '95% patient satisfaction rate',
+  //     '60% increase in telemedicine consultations',
+  //   ],
+  //   technologies: [
+  //     'React',
+  //     'Python',
+  //     'PostgreSQL',
+  //     'WebRTC',
+  //     'AWS HIPAA',
+  //     'Docker',
+  //   ],
+  //   images: [`${basePath}'/images/2.jpg`],
+  //   metrics: [
+  //     {
+  //       label: 'Time Saved',
+  //       value: '80%',
+  //       description: 'In appointment scheduling',
+  //     },
+  //     {
+  //       label: 'Satisfaction',
+  //       value: '95%',
+  //       description: 'Patient satisfaction rate',
+  //     },
+  //     {
+  //       label: 'Cost Reduction',
+  //       value: '50%',
+  //       description: 'Administrative savings',
+  //     },
+  //   ],
+  // },
 
   adminPanel: {
     title: 'Admin Panel',
@@ -166,8 +166,8 @@ export const caseStudies: Record<string, CaseStudyData> = {
 ],
   },
 
-   restuarant: {
-    title: 'Restuarant',
+   restaurant: {
+    title: 'Zaika - Web App',
     client: '',
     industry: '',
     duration: '',
@@ -198,7 +198,64 @@ export const caseStudies: Record<string, CaseStudyData> = {
       'JavaScript ',
       'Bootstrap',
     ],
-    images: [`${basePath}/images/restaurant.jpg`],
+    images: [`${basePath}/images/zaika.jpg`],
+    metrics: [
+  {
+    label: 'Online Reservation Growth',
+    value: '45%',
+    description: 'Increase in online table bookings through the website',
+  },
+  {
+    label: 'Website Traffic Boost',
+    value: '60%',
+    description: 'More visitors attracted with improved SEO and marketing',
+  },
+  {
+    label: 'Mobile User Engagement',
+    value: '75%',
+    description: 'Higher interaction rates from mobile users with responsive design',
+  },
+  {
+    label: 'Order Processing Speed',
+    value: '50%',
+    description: 'Faster order placements and confirmations through the platform',
+  },
+]
+  },
+
+   zaikaMobile: {
+    title: 'Zaika - Mobile App',
+    client: '',
+    industry: '',
+    duration: '',
+    teamSize: '',
+    description:
+      'A modern, user-friendly restaurant website built on WordPress, featuring online menus, reservation booking, and seamless customer engagement. Designed for easy management and mobile responsiveness, it provides an immersive dining experience and boosts customer interaction.',
+   challenge: [
+        'Managing dynamic menu items with frequent updates and seasonal changes.',
+        'Ensuring smooth online reservation and order placement without glitches.',
+        'Optimizing site speed and performance on mobile devices to enhance user experience.',
+        'Integrating third-party plugins securely without conflicts or slowdowns.',
+    ],
+    solution: [
+      'Created custom post types and taxonomies in WordPress for flexible menu management.',
+      'Implemented a reliable booking system plugin with real-time availability and confirmation emails.',
+      'Optimized images, used caching, and a lightweight theme to boost load times on all devices.',
+      'Carefully selected and tested plugins, and implemented security best practices to maintain site stability.',
+    ],
+    results: [
+      '80% reduction in appointment scheduling time',
+      '95% patient satisfaction rate',
+      '60% increase in telemedicine consultations',
+    ],
+    technologies: [
+      'Wordpress',
+      'PHP',
+      'MySQL',
+      'JavaScript ',
+      'Bootstrap',
+    ],
+    images: [`${basePath}/images/ZaikaMobApp.jpg`],
     metrics: [
   {
     label: 'Online Reservation Growth',
@@ -249,9 +306,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
     'Significantly reduced page load time with Tailwind CSS optimization',
   ],
    technologies: ['React','TypeScript',  'Tailwind CSS', 'Node.js', 'MS SQL', 'Stripe'],
-  images: [
-    `${basePath}'/images/t-shirts.jpg'`,
-  ],
+  images: [`${basePath}/images/t-shirts.jpg`,],
   metrics: [
     {
       label: 'User Engagement',
@@ -271,61 +326,61 @@ export const caseStudies: Record<string, CaseStudyData> = {
   ],
 },
 
-  EyeWear: {
-    title: 'Eye Wear',
-    client: '',
-    industry: '',
-    duration: '',
-    teamSize: '',
-    description:
-      'A modern, user-friendly restaurant website built on WordPress, featuring online menus, reservation booking, and seamless customer engagement. Designed for easy management and mobile responsiveness, it provides an immersive dining experience and boosts customer interaction.',
-   challenge: [
-        'Managing dynamic menu items with frequent updates and seasonal changes.',
-        'Ensuring smooth online reservation and order placement without glitches.',
-        'Optimizing site speed and performance on mobile devices to enhance user experience.',
-        'Integrating third-party plugins securely without conflicts or slowdowns.',
-    ],
-    solution: [
-      'Created custom post types and taxonomies in WordPress for flexible menu management.',
-      'Implemented a reliable booking system plugin with real-time availability and confirmation emails.',
-      'Optimized images, used caching, and a lightweight theme to boost load times on all devices.',
-      'Carefully selected and tested plugins, and implemented security best practices to maintain site stability.',
-    ],
-    results: [
-      '80% reduction in appointment scheduling time',
-      '95% patient satisfaction rate',
-      '60% increase in telemedicine consultations',
-    ],
-    technologies: [
-      'Wordpress',
-      'PHP',
-      'MySQL',
-      'JavaScript ',
-      'Bootstrap',
-    ],
-    images: [`${basePath}/images/restaurant.jpg`],
-    metrics: [
-  {
-    label: 'Online Reservation Growth',
-    value: '45%',
-    description: 'Increase in online table bookings through the website',
-  },
-  {
-    label: 'Website Traffic Boost',
-    value: '60%',
-    description: 'More visitors attracted with improved SEO and marketing',
-  },
-  {
-    label: 'Mobile User Engagement',
-    value: '75%',
-    description: 'Higher interaction rates from mobile users with responsive design',
-  },
-  {
-    label: 'Order Processing Speed',
-    value: '50%',
-    description: 'Faster order placements and confirmations through the platform',
-  },
-]
-  },
+//   EyeWear: {
+//     title: 'Eye Wear',
+//     client: '',
+//     industry: '',
+//     duration: '',
+//     teamSize: '',
+//     description:
+//       'A modern, user-friendly restaurant website built on WordPress, featuring online menus, reservation booking, and seamless customer engagement. Designed for easy management and mobile responsiveness, it provides an immersive dining experience and boosts customer interaction.',
+//    challenge: [
+//         'Managing dynamic menu items with frequent updates and seasonal changes.',
+//         'Ensuring smooth online reservation and order placement without glitches.',
+//         'Optimizing site speed and performance on mobile devices to enhance user experience.',
+//         'Integrating third-party plugins securely without conflicts or slowdowns.',
+//     ],
+//     solution: [
+//       'Created custom post types and taxonomies in WordPress for flexible menu management.',
+//       'Implemented a reliable booking system plugin with real-time availability and confirmation emails.',
+//       'Optimized images, used caching, and a lightweight theme to boost load times on all devices.',
+//       'Carefully selected and tested plugins, and implemented security best practices to maintain site stability.',
+//     ],
+//     results: [
+//       '80% reduction in appointment scheduling time',
+//       '95% patient satisfaction rate',
+//       '60% increase in telemedicine consultations',
+//     ],
+//     technologies: [
+//       'Wordpress',
+//       'PHP',
+//       'MySQL',
+//       'JavaScript ',
+//       'Bootstrap',
+//     ],
+//     images: [`${basePath}/images/restaurant.jpg`],
+//     metrics: [
+//   {
+//     label: 'Online Reservation Growth',
+//     value: '45%',
+//     description: 'Increase in online table bookings through the website',
+//   },
+//   {
+//     label: 'Website Traffic Boost',
+//     value: '60%',
+//     description: 'More visitors attracted with improved SEO and marketing',
+//   },
+//   {
+//     label: 'Mobile User Engagement',
+//     value: '75%',
+//     description: 'Higher interaction rates from mobile users with responsive design',
+//   },
+//   {
+//     label: 'Order Processing Speed',
+//     value: '50%',
+//     description: 'Faster order placements and confirmations through the platform',
+//   },
+// ]
+//   },
 
 };

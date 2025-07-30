@@ -55,9 +55,24 @@ const showcaseData: ShowcaseItem[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
   },
   {
-    title: 'Restaurant',
-    slug: 'restuarant',
-    images: [`${basePath}/images/restaurant.jpg`],
+    title: 'Zaika Web',
+    slug: 'restaurant',
+    images: [`${basePath}/images/zaika.jpg`],
+    shortDescription: 'A comprehensive online shopping solution.',
+    detailedDescription:
+      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
+    durationMonths: 6,
+    challenges:
+      'Complex product structures, cart performance, and secure checkout.',
+    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
+    keyResults: ['40% performance boost', '99.9% uptime'],
+    outcome: 'Fully functional store launched with positive feedback.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+  },
+   {
+    title: 'Zaika - Mobile App',
+    slug: 'zaikaMobile',
+    images: [`${basePath}/images/zaikaMobApp.jpg`],
     shortDescription: 'A comprehensive online shopping solution.',
     detailedDescription:
       'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
@@ -84,35 +99,35 @@ const showcaseData: ShowcaseItem[] = [
     outcome: 'Fully functional store launched with positive feedback.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
   },
-  {
-    title: 'EyeWear',
-    slug: 'EyeWear',
-    images: [`${basePath}/images/1.jpg`],
-    shortDescription: 'A comprehensive online shopping solution.',
-    detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
-    durationMonths: 6,
-    challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-  },
-  {
-    title: 'Healthcare Management System',
-    slug: 'healthcare-management',
-    images: [`${basePath}/images/2.jpg`],
-    shortDescription: 'Digitized healthcare operations and records.',
-    detailedDescription:
-      'Developed telemedicine, scheduling, and patient data management features.',
-    durationMonths: 8,
-    challenges: 'Data privacy, real-time communication, secure storage.',
-    solutions: 'Implemented end-to-end encryption and WebRTC.',
-    keyResults: ['Reduced wait time by 60%', 'Increased patient satisfaction'],
-    outcome: 'Adopted by multiple clinics.',
-    technologies: ['React', 'Express', 'MySQL', 'WebRTC'],
-  },
+  // {
+  //   title: 'EyeWear',
+  //   slug: 'EyeWear',
+  //   images: [`${basePath}/images/1.jpg`],
+  //   shortDescription: 'A comprehensive online shopping solution.',
+  //   detailedDescription:
+  //     'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
+  //   durationMonths: 6,
+  //   challenges:
+  //     'Complex product structures, cart performance, and secure checkout.',
+  //   solutions: 'Optimized DB design, lazy loading, Stripe integration.',
+  //   keyResults: ['40% performance boost', '99.9% uptime'],
+  //   outcome: 'Fully functional store launched with positive feedback.',
+  //   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+  // },
+  // {
+  //   title: 'Healthcare Management System',
+  //   slug: 'healthcare-management',
+  //   images: [`${basePath}/images/2.jpg`],
+  //   shortDescription: 'Digitized healthcare operations and records.',
+  //   detailedDescription:
+  //     'Developed telemedicine, scheduling, and patient data management features.',
+  //   durationMonths: 8,
+  //   challenges: 'Data privacy, real-time communication, secure storage.',
+  //   solutions: 'Implemented end-to-end encryption and WebRTC.',
+  //   keyResults: ['Reduced wait time by 60%', 'Increased patient satisfaction'],
+  //   outcome: 'Adopted by multiple clinics.',
+  //   technologies: ['React', 'Express', 'MySQL', 'WebRTC'],
+  // },
 ];
 
 const ShowcaseSection: React.FC = () => {
@@ -142,7 +157,7 @@ const ShowcaseSection: React.FC = () => {
                   src={item.images[0]}
                   alt={item.title}
                   fill
-                  className='object-cover'
+                  className='object-cover object-top'
                 />
               </div>
               <CardHeader>
@@ -155,7 +170,7 @@ const ShowcaseSection: React.FC = () => {
                 </CardDescription>
                 <Button
                   onClick={() =>
-                    window.open(`./case-studies/${item.slug}`, '_blank')
+                    window.open(`${basePath}/case-studies/${item.slug}`, '_blank')
                   }
                   className='bg-orange-500 hover:bg-orange-600 text-white py-2 text-base'
                 >
