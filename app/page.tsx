@@ -73,7 +73,7 @@ export default function ErzEl() {
   };
 
   const images = [
-    'restaurant.jpg',
+    'ZaikaMobApp.jpg',
     'admin-panel.jpg',
     'floral.jpg',
     't-shirts.jpg',
@@ -81,10 +81,9 @@ export default function ErzEl() {
   ];
 
   const ServicesImages = [
-    'restaurant.jpg',
-    'mobile.jpg',
+    'ZaikaMobApp.jpg',
     'floral.jpg',
-    't-shirts.jpg',
+    'ZaikaMobApp.jpg',
     'Zaika.jpg',
   ];
 
@@ -146,7 +145,6 @@ export default function ErzEl() {
 
   const tabs = [
     'UI/UX',
-    'Branding',
     'Web Design & Development',
     'Mobile Design & Development',
     'SaaS Application',
@@ -154,7 +152,6 @@ export default function ErzEl() {
 
   const titles = [
     'UI/UX',
-    'Branding',
     'Modern Websites',
     'Responsive Apps',
     'Scalable Platforms',
