@@ -28,92 +28,92 @@ const showcaseData: ShowcaseItem[] = [
     title: 'Floral',
     slug: 'floral',
     images: [`${basePath}/images/floral.jpg`],
-    shortDescription: 'Blooms Crafted Digitally with Love & Elegance.',
+    shortDescription: 'Brighten every moment with handcrafted blooms delivered fresh, from heart to home.',
     detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
-    durationMonths: 6,
+      '',
+durationMonths: 6,
     challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
   },
   {
     title: 'Admin Panel',
     slug: 'adminPanel',
     images: [`${basePath}/images/admin-panel.jpg`],
-    shortDescription: 'A comprehensive online shopping solution.',
+    shortDescription: 'Manage everything effortlessly with a powerful, intuitive admin panel built for control and clarity.',
     detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
-    durationMonths: 6,
+      '',
+   durationMonths: 6,
     challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
   },
   {
     title: 'Zaika Web',
     slug: 'restaurant',
     images: [`${basePath}/images/zaika.jpg`],
-    shortDescription: 'A comprehensive online shopping solution.',
+    shortDescription: 'Experience the true taste of tradition with Zaika’s rich, flavorful cuisine delivered to your doorstep.',
     detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
-    durationMonths: 6,
+      '',
+   durationMonths: 6,
     challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
   },
    {
     title: 'Zaika - Mobile App',
     slug: 'zaikaMobile',
     images: [`${basePath}/images/zaikaMobApp.jpg`],
-    shortDescription: 'A comprehensive online shopping solution.',
+    shortDescription: 'Order your favorite Zaika dishes anytime, anywhere – fast, fresh, and just a tap away!',
     detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
+      '',
     durationMonths: 6,
     challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
   },
   {
     title: 'T-Shirts Designs',
     slug: 'T-ShirtsDesigns',
     images: [`${basePath}/images/t-shirts.jpg`],
-    shortDescription: 'A comprehensive online shopping solution.',
+    shortDescription: 'Wear your vibe – bold, comfy, and made to stand out.',
     detailedDescription:
-      'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
+      '',
     durationMonths: 6,
     challenges:
-      'Complex product structures, cart performance, and secure checkout.',
-    solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-    keyResults: ['40% performance boost', '99.9% uptime'],
-    outcome: 'Fully functional store launched with positive feedback.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
   },
-  // {
-  //   title: 'EyeWear',
-  //   slug: 'EyeWear',
-  //   images: [`${basePath}/images/1.jpg`],
-  //   shortDescription: 'A comprehensive online shopping solution.',
-  //   detailedDescription:
-  //     'Built a scalable, secure e-commerce system with payment integration and responsive UI.',
-  //   durationMonths: 6,
-  //   challenges:
-  //     'Complex product structures, cart performance, and secure checkout.',
-  //   solutions: 'Optimized DB design, lazy loading, Stripe integration.',
-  //   keyResults: ['40% performance boost', '99.9% uptime'],
-  //   outcome: 'Fully functional store launched with positive feedback.',
-  //   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-  // },
+  {
+    title: 'ErzEl Shop',
+    slug: 'ErzElShop',
+    images: [`${basePath}/images/ErzElShop.png`],
+    shortDescription: 'From engines to edges — Erzel Shop fuels your journey with premium parts, trusted oils, and durable tires. Drive better, drive with Erzel',
+    detailedDescription:
+      '',
+    durationMonths: 6,
+    challenges:
+      '',
+    solutions: '',
+    keyResults: [],
+    outcome: '',
+    technologies: [],
+  },
   // {
   //   title: 'Healthcare Management System',
   //   slug: 'healthcare-management',
@@ -164,7 +164,7 @@ const ShowcaseSection: React.FC = () => {
                 <CardTitle className='text-gray-900'>{item.title}</CardTitle>
                 <CardDescription>{item.shortDescription}</CardDescription>
               </CardHeader>
-              <CardContent className='p-6'>
+              <CardContent>
                 <CardDescription className='mb-4'>
                   {item.detailedDescription}
                 </CardDescription>
